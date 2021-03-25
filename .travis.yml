@@ -1,0 +1,9 @@
+language: java
+before_install:
+ - chmod +x mvnw
+after_success:
+ - bash <(curl -s https://codecov.io/bash)
+  
+env:
+ global:
+  - CODECOV_TOKEN="c7d5a45f-1ae8-4c7e-b69a-b1a29c026d97"
