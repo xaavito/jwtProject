@@ -2,48 +2,7 @@
 [![codecov](https://codecov.io/gh/xaavito/jwtProject/branch/master/graph/badge.svg)](https://codecov.io/gh/xaavito/jwtProject)
 
 
-# TEMPLATE
-1) Clonar proyecto
-2) Copiar el proyecto a otra carpeta y borrar el .git folder
-3) reemplazar "template" en todos lados por el nombre del nuevo proyecto.
-4) Iniciar el nuevo repo con:
-
-~~~~
-git init
-~~~~
-
-which initiates a new git repository in that directory.
-
-- When you've done that, you need to register that new repo with a remote (where you'll upload -- push -- your files to), which in this case will be github. You'll get the correct URL from your repo on GitHub.
-
-~~~~
-git remote add origin https://github.com/[username]/[reponame].git
-~~~~
-
-You need to add you existing files to your local commit:
-
-~~~~
-git add .   
-~~~~
-
-this adds all the files
-Then you need to make an initial commit, so you do:
-
-~~~~
-git commit -a -m "Initial commit" 
-~~~~
-
-this stages your files locally for commit. 
-they haven't actually been pushed yet
-
-Now you've created a commit in your local repo, but not in the remote one. To put it on the remote, you do the second line you posted:
-
-~~~~
-git push -u origin --all
-~~~~	
-
-
-Ir a Circle CI y activar el proyecto, copiar el ID en .travis.yml, Ir a Travis CI y activar el proyecto, para eso la carpeta .mvn debe estar, NO LA SAQUES, comitear el .travis.yml y arranca la compilacion
+# JWT Simple Project
 
 By Javier Martin Gonzalez
 
@@ -66,7 +25,7 @@ By Javier Martin Gonzalez
 
 2) Una vez clonado en un repo propio basta con ir a la carpeta template y desde la consola
 
-					java -jar target/template-0.0.1-SNAPSHOT.jar
+					java -jar target/jwtProject-0.0.1-SNAPSHOT.jar
 
 3) Acceder via explorador a:
 
