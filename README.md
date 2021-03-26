@@ -57,7 +57,9 @@ El reporte completo se puede encontrar en: [Reporte](https://github.com/xaavito/
 
 # Swagger
 
-http://localhost:8080/swagger-ui.html#/
+http://localhost:8080/v2/api-docs 
+
+http://localhost:8080/swagger-ui.html#/ no funciona y ni idea por que
 
 
 # Ejemplo

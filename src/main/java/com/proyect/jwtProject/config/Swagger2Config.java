@@ -23,7 +23,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2).select()
             .apis(RequestHandlerSelectors
                 .basePackage("com.proyect.jwtProject.controller"))
-            .paths(PathSelectors.regex("/.*"))
+            .paths(PathSelectors.any())
             .build().apiInfo(apiEndPointsInfo());
     }
     private ApiInfo apiEndPointsInfo() {
