@@ -39,6 +39,10 @@ By Javier Martin Gonzalez
 
 							localhost:8080/get-usuarios
 							
+							Autorizacion
+							
+							localhost:8080/user
+							
 							
 # Tests
 
@@ -59,11 +63,14 @@ El reporte completo se puede encontrar en: [Reporte](https://github.com/xaavito/
 
 http://localhost:8080/v2/api-docs 
 
-http://localhost:8080/swagger-ui.html#/ no funciona y ni idea por que
-
+http://localhost:8080/swagger-ui.html#/ 
 
 # Ejemplo
 
 https://blog.softtek.com/es/autenticando-apis-con-spring-y-jwt
 https://www.javainuse.com/spring/boot-jwt
+
+# Banner generator
+
+https://devops.datenkollektiv.de/banner.txt/index.html
 

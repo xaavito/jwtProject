@@ -26,9 +26,9 @@ public class UserController {
 		user.setUser(username);
 		user.setToken(token);		
 		return user;
-		
 	}
 
+	// TODO: Pasar a utility?
 	private String getJWTToken(String username) {
 		String secretKey = "mySecretKey";
 		List<GrantedAuthority> grantedAuthorities = AuthorityUtils
@@ -36,7 +36,7 @@ public class UserController {
 		
 		String token = Jwts
 				.builder()
-				.setId("softtekJWT")
+				.setId("JWTTestProject")
 				.setSubject(username)
 				.claim("authorities",
 						grantedAuthorities.stream()
