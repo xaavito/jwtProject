@@ -16,7 +16,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		http.csrf().disable().addFilterAfter(new JWTAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
 				.authorizeRequests().antMatchers(HttpMethod.POST, "/user").permitAll()
 				.antMatchers(HttpMethod.GET, "/actuator/**").permitAll().antMatchers(HttpMethod.GET, "/swagger-ui.html")
-				.permitAll().antMatchers(HttpMethod.GET, "/v2/**").permitAll().anyRequest().authenticated();
+				.permitAll().antMatchers(HttpMethod.GET, "/v2/**").permitAll()
+				.antMatchers(HttpMethod.GET, "/swagger-resources/**").permitAll()
+				.antMatchers(HttpMethod.GET, "/webjars/**").permitAll().anyRequest().authenticated();
 	}
 
 }
